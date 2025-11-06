@@ -16,7 +16,8 @@ touch ~/lab/tekst1.txt ~/lab/tekst2.txt ~/lab/tekst3.txt
 ## 8
 cp ~/lab/tekst*.txt ~/lab/dir1/dir2/dir3/
 ## 9
-
+cd lab
+touch .ukryty.txt
 ## 10
 mv ~/lab/dir1/dir2/dir3/tekst1.txt ~/lab/dir1/dir2/dir3/nowanazwa.txt
 ## 11
@@ -30,7 +31,7 @@ find / -type d -name share 2>/dev/null
 ## 15
 find /usr/in -type f -size +5M 2>/dev/null
 ## 16
-
+find /usr/bin -type f -size +300c -size -500c -exec cp {} lab/ \;
 ## 17
 ln ~/lab/tekst2.txt ~/lab/TEKST2.TXT
 ## 18
@@ -39,3 +40,5 @@ ln -s ~/lab/tekst2.txt ~/lab/Tekst2.txt
 ls -la ~/lab
 ## 20
 ls /dev/ |grep tty
+## 21 
+ls -R ../lab
