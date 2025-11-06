@@ -1,11 +1,11 @@
 ## 1 
-# mkdir lab
+mkdir lab
 ## 2
-# ls -ld lab
+ls -ld lab
 ## 3
-# chmod 750 lab
+chmod 750 lab
 ## 4 
-# ls -l /boot > lab/boot.txt
+ls -l /boot > lab/boot.txt
 ## 5 
 # mkdir lab/dir1/dir2/dir3
 ## 6
