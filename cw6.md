@@ -14,17 +14,4 @@ NR==1 { print; next }
 }' iris.csv
 
 ## 10 
-awk '
-NR==1 { header = $0; next }
-{ rows[++n] = $0 }
-END {
-    print header
-    srand()
-    while (n > 0) {
-        i = int(rand()*n) + 1
-        print rows[i]
-        rows[i] = rows[n]
-        n--
-    }
-}
-' iris.csv > iris2.csv
+awk 'NR==1{h=$0;next}{r[++n]=$0}END{srand();print h;while(n){i=int(rand()*n)+1;print r[i];r[i]=r[n];n--}}' iris.csv > iris2.csv
