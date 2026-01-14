@@ -1,5 +1,5 @@
 #!/bin/bash
-
+ 
 # Sprawdzenie czy podano argumenty
 if [ $# -eq 0 ]; then
     echo "Użycie: $0 katalog1 [katalog2 ...]"
